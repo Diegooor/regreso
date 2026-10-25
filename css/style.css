@@ -1,0 +1,223 @@
+/* ===== REGRESO - estilos propios (complementan Bootstrap) ===== */
+:root {
+  --reg-violeta: #bb9ee7;
+  --reg-dorado: #f8f8f5fa;
+  --reg-crema: #faf6ef;
+  --reg-texto: #2b2238;
+  --reg-titulos: #9f8adb;
+}
+
+body {
+  background: var(--reg-crema);
+  color: var(--reg-texto);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Enlace para saltar al contenido (accesibilidad) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  color: #000;
+  padding: .5rem 1rem;
+  z-index: 2000;
+}
+.skip-link:focus { left: 0; }
+
+/* Navegación y pie */
+.site-header { background: var(--reg-violeta); }
+.site-header .navbar-brand { color: var(--reg-dorado); letter-spacing: .25em; font-size: 1.6rem; }
+.site-header .navbar { padding-block: 1.1rem; }
+.site-header .navbar-nav { gap: .5rem; }
+.site-header .nav-link {
+  color: #fff;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  padding: .8rem 1.7rem;
+  margin: 0 .15rem;
+  border-radius: 2rem;
+  border-bottom: 2px solid transparent;
+  transition: background-color .25s, color .25s, transform .25s, box-shadow .25s;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link:focus-visible {
+  background: var(--reg-dorado);
+  color: #1d1230;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+}
+.site-header .nav-link:active { transform: translateY(0) scale(.96); }
+.site-header .nav-link.active {
+  color: var(--reg-dorado);
+  border-bottom-color: var(--reg-dorado);
+  border-radius: 0;
+}
+.site-header .nav-link.active:hover { border-radius: 2rem; color: #1d1230; }
+.site-footer { background: #bb9ee7; color: #ffffff; }
+.site-footer a { color: var(--reg-dorado); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, rgba(75, 42, 123, .92), rgba(155, 127, 209, .8)),
+              url("") center 40% /cover no-repeat;
+  color: #ffffff;
+  padding: 6rem 0;
+}
+.hero { position: relative; overflow: hidden; }
+.hero h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); letter-spacing: .2em; }
+.hero-contenido { position: relative; z-index: 1; }
+
+/* Animación relajante del hero: movimiento lento y suave */
+.hero-fx { position: absolute; inset: 0; pointer-events: none; }
+.orbe {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, .55), rgba(201, 162, 75, .18) 60%, transparent 70%);
+  animation: flotar 14s ease-in-out infinite;
+}
+.orbe-1 { width: 180px; height: 180px; left: 8%;  top: 15%;    animation-duration: 16s; }
+.orbe-2 { width: 110px; height: 110px; left: 80%; top: 20%;    animation-duration: 12s; animation-delay: -4s; }
+.orbe-3 { width: 140px; height: 140px; left: 68%; bottom: 8%;  animation-duration: 18s; animation-delay: -8s; }
+.orbe-4 { width: 80px;  height: 80px;  left: 25%; bottom: 10%; animation-duration: 13s; animation-delay: -2s; }
+
+
+@keyframes flotar {
+  0%, 100% { transform: translate(0, 0); opacity: .6; }
+  50%      { transform: translate(20px, -35px); opacity: 1; }
+}
+@keyframes respirar {
+  0%, 100% { transform: scale(.8); opacity: .25; }
+  50%      { transform: scale(1.15); opacity: .7; }
+}
+/* Respeta a quienes prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .orbe, .aro { animation: none; }
+}
+.btn-dorado { background: var(--reg-dorado); color: #000000; border: 0; font-weight: 600; }
+.btn-dorado:hover, .btn-dorado:focus { background: #bb9ee7; color: #1d1230; }
+
+/* Botones de accesos rápidos */
+.btn-acceso {
+  background: #bb9ee7;
+  color: #1d1230;
+  transition: background-color .25s, border-color .25s;
+
+}
+.btn-acceso:hover, .btn-acceso:focus-visible {
+  background: #8d51e7;
+}
+
+/* Cards */
+.card-servicio { border: 0; box-shadow: 0 4px 14px rgba(75, 42, 123, .12); transition: transform .2s; }
+.card-servicio:hover { transform: translateY(-4px); }
+.card-servicio .icono { font-size: 2.5rem; }
+
+.section-title { color: var(--reg-titulos); }
+
+
+.btn-saber { background: #bb9ee7; color: #000000; border: 0; font-weight: 600; }
+.btn-saber:hover, .btn-saber:focus { background: #8d51e7; color: #3a3320; }
+
+/* Tarifas */
+.tarifas { border-collapse: separate; border-spacing: 0 .6rem; }
+.tarifas thead th {
+  background: var(--reg-titulos);
+  color: #fff;
+  border: 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .9rem;
+}
+.tarifas thead th:first-child { border-radius: .75rem 0 0 .75rem; }
+.tarifas thead th:last-child { border-radius: 0 .75rem .75rem 0; }
+.tarifas tbody th, .tarifas tbody td {
+  background: #fff;
+  border: 0;
+  padding: 1.1rem 1rem;
+  vertical-align: middle;
+}
+.tarifas tbody tr { box-shadow: 0 3px 10px rgba(75, 42, 123, .1); transition: transform .2s; }
+.tarifas tbody tr:hover { transform: translateY(-2px); }
+.tarifas tbody th { border-radius: .75rem 0 0 .75rem; color: #5b4a8a; }
+.tarifas tbody td:last-child { border-radius: 0 .75rem .75rem 0; }
+.tarifas .precio { font-weight: 700; font-size: 1.15rem; color: #7a5fc0; }
+.tarifas .modalidad { background: #eee6fb; color: #5b4a8a; border-radius: 2rem; padding: .25rem .8rem; font-size: .85rem; white-space: nowrap; }
+.tarifas tfoot th, .tarifas tfoot td { background: hsl(60, 100%, 99%); border: 0; padding: 1rem; color: #3a3320; }
+.tarifas tfoot th { border-radius: .75rem 0 0 .75rem; }
+.tarifas tfoot td { border-radius: 0 .75rem .75rem 0; }
+.tarifas caption { caption-side: top; color: #000000; }
+/* Sin barra de scroll en tablet/escritorio; en móvil se mantiene para que la tabla sea legible */
+@media (min-width: 768px) {
+  .table-responsive { overflow-x: visible; }
+}
+
+/* Contacto: WhatsApp y redes */
+.btn-whatsapp { background: #25d366; color: #fff; font-weight: 600; border: 0; }
+.btn-whatsapp:hover, .btn-whatsapp:focus { background: #1ebe5b; color: #fff; }
+.btn-red { display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; color: #fff; border: 0; }
+.btn-red:hover, .btn-red:focus { color: #fff; filter: brightness(1.1); }
+.btn-instagram { background: linear-gradient(45deg, #f09433, #dc2743 50%, #bc1888); }
+.btn-tiktok { background-color: #111; }
+.btn-tiktok:hover, .btn-tiktok:focus, .btn-tiktok:active { background-color: #333; color: #fff; }
+.btn-red svg, .btn-whatsapp svg { width: 1.2em; height: 1.2em; fill: currentColor; }
+.aside-redes { padding-block: 2rem; margin-top: 8rem; }
+@media (max-width: 991.98px) { .aside-redes { margin-top: 0; } }
+.aside-redes .btn-red { padding: .8rem 1.5rem; font-size: 1.1rem; flex: 1 1 8rem; justify-content: center; }
+
+/* Botón flotante de WhatsApp (todas las páginas) */
+.whatsapp-flotante {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1030;
+  min-width: 3.8rem;
+  min-height: 3.8rem;
+  padding: 0 1.1rem;
+  gap: .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .3);
+  transition: transform .2s, background-color .2s;
+}
+.whatsapp-flotante:hover, .whatsapp-flotante:focus-visible { background: #1ebe5b; color: #fff; transform: scale(1.05); }
+.whatsapp-flotante svg { width: 2rem; height: 2rem; flex-shrink: 0; fill: currentColor; }
+/* En móvil se muestra solo el ícono redondo */
+@media (max-width: 575.98px) {
+  .whatsapp-flotante { padding: 0; }
+  .whatsapp-flotante .texto { display: none; }
+}
+
+/* Galería */
+.galeria figure { margin: 0; }
+.galeria img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: .5rem; }
+.galeria figcaption { font-size: .9rem; color: #000000; padding-top: .35rem; }
+/* Testimonios: la imagen se muestra completa, sin recortar (capturas o fotos de cualquier proporción) */
+.galeria .testimonio img { aspect-ratio: auto; height: auto; object-fit: contain; box-shadow: 0 4px 14px rgba(75, 42, 123, .15); }
+.galeria .testimonio figcaption { text-align: center; font-weight: 600; color: #5b4a8a; }
+
+/* Video responsive */
+.video-wrap { max-width: 800px; margin-inline: auto; }
+
+/* Aside */
+.aside-box { background: #fff; border-left: 4px solid var(--reg-dorado); }
+
+/* Tabla */
+.table thead { background: var(--reg-violeta); color: #fff; }
+
+/* Formulario */
+.form-text, .invalid-feedback { font-size: .9rem; }
+:focus-visible { outline: 3px solid var(--reg-dorado); outline-offset: 2px; }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | REGRESO</title>
+  <meta name="description" content="Escribe a REGRESO para reservar una sesión de canalización, péndulo, tarot evolutivo o reiki.">
+  <meta name="keywords" content="contacto, reservar sesión, canalizaciones, reiki, tarot">
+  <meta name="author" content="Diego Ordóñez">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto | REGRESO">
+  <meta property="og:description" content="Reserva tu sesión con la maestra canalizadora.">
+  <meta property="og:image" content="img/principal3.jpeg">
+  <meta property="og:locale" content="es_ES">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="informacion.html">Información</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="tabla.html">Tarifas</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido" class="container py-5">
+    <h1 class="section-title mb-2">Contacto</h1>
+    <p class="mb-4">Para reservar una sesión, completa el formulario y te responderé en un máximo de 48 horas. Si prefieres, también puedes contactarme directamente por WhatsApp haciendo clic en el botón flotante.</p>
+
+    <div class="row g-4 align-items-lg-start">
+      <section class="col-lg-8" aria-labelledby="form-titulo">
+        <h2 id="form-titulo" class="h3 mb-3">Reserva tu sesión</h2>
+
+        <!-- Región viva: anuncia el resultado del envío a lectores de pantalla -->
+        <div id="form-estado" role="status" aria-live="polite"></div>
+
+        <form id="form-contacto" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre <span aria-hidden="true">*</span></label>
+            <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name" required aria-describedby="nombre-error">
+            <div id="nombre-error" class="invalid-feedback"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input type="email" class="form-control" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <div id="email-error" class="invalid-feedback"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="servicio" class="form-label">Servicio de interés <span aria-hidden="true">*</span></label>
+            <select class="form-select" id="servicio" name="servicio" required aria-describedby="servicio-error">
+              <option value="">Selecciona una opción</option>
+              <option value="canalizacion">Canalización</option>
+              <option value="pendulo">Péndulo</option>
+              <option value="tarot">Tarot evolutivo</option>
+              <option value="reiki">Reiki</option>
+              <option value="otro">Otro</option>
+            </select>
+            <div id="servicio-error" class="invalid-feedback"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required aria-describedby="mensaje-error"></textarea>
+            <div id="mensaje-error" class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="acepto" name="acepto" required aria-describedby="acepto-error">
+            <label class="form-check-label" for="acepto">Acepto la política de privacidad y el tratamiento de mis datos.</label>
+            <div id="acepto-error" class="invalid-feedback"></div>
+          </div>
+
+          <button type="submit" class="btn btn-dorado btn-lg">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <aside class="col-lg-4" aria-label="Datos de contacto">
+        <div class="aside-box aside-redes p-4 shadow-sm">
+          <h3 class="h5 mb-3">Sígueme en redes sociales</h3>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-red btn-instagram" href="https://www.instagram.com/regreso__" target="_blank" rel="noopener noreferrer" aria-label="Instagram de REGRESO (se abre en una pestaña nueva)">
+              <svg aria-hidden="true" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              Instagram
+            </a>
+            <a class="btn btn-red btn-tiktok" href="https://www.tiktok.com/@regreso__" target="_blank" rel="noopener noreferrer" aria-label="TikTok de REGRESO (se abre en una pestaña nueva)">
+              <svg aria-hidden="true" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1-122.8-39.3v178.8A162.6 162.6 0 1 1 185 188.3v89.9a74.6 74.6 0 1 0 52.2 71.2V0h88a121 121 0 0 0 1.9 22.2A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+              TikTok
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">&copy; 2026 REGRESO. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="whatsapp-flotante" href="https://wa.me/573215701903?text=Hola%2C%20Ang%C3%A9lica.%20Me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20contigo." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp (se abre en una pestaña nueva)">
+    <svg aria-hidden="true" viewBox="0 0 448 512"><path d="M380.9 97.1A223.9 223.9 0 0 0 222.1 32C98.6 32 .1 130.5.1 254c0 38.8 10.1 76.7 29.4 110.1L0 480l118.8-31.2a221.6 221.6 0 0 0 105.3 26.8h.1c123.4 0 224-98.5 224-222 0-59.3-24.9-115.1-67.3-157.5zM222.2 437.2c-33.4 0-66.1-9-94.7-25.9l-6.8-4-70.5 18.5 18.8-68.7-4.4-7A183.8 183.8 0 0 1 37.6 254c0-101.7 82.8-184.5 184.7-184.5 49.3 0 95.6 19.2 130.4 54.1a183.2 183.2 0 0 1 54 130.4c0 101.7-83.7 183.2-184.5 183.2zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    <span class="texto">Reserva tu sesión por WhatsApp</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
