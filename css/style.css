@@ -82,10 +82,11 @@ h1, h2, h3, h4, .navbar-brand {
   background: radial-gradient(circle, rgba(255, 255, 255, .55), rgba(201, 162, 75, .18) 60%, transparent 70%);
   animation: flotar 14s ease-in-out infinite;
 }
-.orbe-1 { width: 180px; height: 180px; left: 8%;  top: 15%;    animation-duration: 16s; }
-.orbe-2 { width: 110px; height: 110px; left: 80%; top: 20%;    animation-duration: 12s; animation-delay: -4s; }
-.orbe-3 { width: 140px; height: 140px; left: 68%; bottom: 8%;  animation-duration: 18s; animation-delay: -8s; }
-.orbe-4 { width: 80px;  height: 80px;  left: 25%; bottom: 10%; animation-duration: 13s; animation-delay: -2s; }
+.orbe-1 { width: 180px; height: 180px; left: 8%;  top: 15%;    animation-duration: 5s; }
+.orbe-2 { width: 110px; height: 110px; left: 80%; top: 20%;    animation-duration: 5s; animation-delay: -2s; }
+.orbe-3 { width: 140px; height: 140px; left: 68%; bottom: 8%;  animation-duration: 9s; animation-delay: -4s; }
+.orbe-4 { width: 80px;  height: 80px;  left: 25%; bottom: 10%; animation-duration: 7s; animation-delay: -1s; }
+.orbe-5 { width: 100px; height: 100px; left: 45%; top: 8%;    animation-duration: 7s; animation-delay: -3s; }
 
 
 @keyframes flotar {
